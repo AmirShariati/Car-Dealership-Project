@@ -32,5 +32,5 @@ The project is divided into three folders:
 ![Company-based query](https://github.com/AmirShariati/Car-Dealership-Project/assets/126683177/259ae466-7d59-48eb-a636-7c9082816ccf)
 
 ## Contact
-
-Gmail: amirshrt1382@gmail.com
+Amir Shariati - amirshrt1382@gmail.com
+Project Link: 
