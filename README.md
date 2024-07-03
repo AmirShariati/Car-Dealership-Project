@@ -1,7 +1,6 @@
 # Project Name
 Car Dealership
 
-> A brief description of my project.
 The project is a website for a car dealership. It uses mongoDB as its databse and features various query types such as query based on name, category, brand and price.
 
 ## Table of Contents
@@ -31,5 +30,4 @@ You need to have mongoDB installed on your computer and import the json file in 
 ![Company based query](https://github.com/AmirShariati/Car-Dealership-Project/assets/126683177/259ae466-7d59-48eb-a636-7c9082816ccf)
 
 ## Contact
-You can contact me using my gmail
 Gmail: amirshrt1382@gmail.com
