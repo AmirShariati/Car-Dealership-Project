@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icon pack -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Car Dealership</title>
+  </head>
+
+  <body>
+    <header class="header" id="header-section" data-header>
+      <div class="container">
+        <div class="logo-search">
+          <a href="#">
+            <img class="header-logo" src="Images/Car Deals logo.png" />
+          </a>
+          <form class="search-bar">
+            <input
+              class="header-search"
+              type="text"
+              placeholder="Search"
+              required
+            />
+          </form>
+        </div>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <span class="navbar-span category-span" data-nav-span
+                >Category</span
+              >
+            </li>
+
+            <li>
+              <span class="navbar-span company-span" data-nav-span
+                >Company</span
+              >
+            </li>
+
+            <li>
+              <span class="navbar-span price-span" data-nav-span>Price</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <i class="ph ph-profile ph-user"></i>
+      <i class="ph ph-profile ph-shopping-cart-simple"></i>
+
+      <div class="category-popup hidden">
+        <div class="suv-pack car-icon-pack" data-category="SUV">
+          <span class="car-category">SUV</span>
+          <img class="category-car-icon" src="Images/suv.png" alt="suv car" />
+        </div>
+
+        <div class="muscle-pack car-icon-pack" data-category="Muscle">
+          <span class="car-category">Muscle</span>
+          <img
+            class="category-car-icon"
+            src="Images/muscle car.png"
+            alt="muscle car"
+          />
+        </div>
+
+        <div class="sport-pack car-icon-pack" data-category="Sport">
+          <span class="car-category">Sport</span>
+          <img
+            class="category-car-icon"
+            src="Images/sport car.png"
+            alt="sport car"
+          />
+        </div>
+
+        <div class="super-pack car-icon-pack" data-category="Super">
+          <span class="car-category">Super</span>
+          <img
+            class="category-car-icon"
+            src="Images/super car.png"
+            alt="super car"
+          />
+        </div>
+
+        <div class="electric-pack car-icon-pack" data-category="Electric">
+          <span class="car-category">Electric</span>
+          <img
+            class="category-car-icon"
+            src="Images/electric car.png"
+            alt="electric car"
+          />
+        </div>
+      </div>
+
+      <div class="brand-popup hidden">
+        <div class="aston-pack brand-icon-pack" data-brand="Aston Martin">
+          <span class="car-brand">Aston Martin</span>
+          <img
+            class="brand-car-icon"
+            src="Images/aston martin logo.png"
+            alt="aston martin logo"
+          />
+        </div>
+
+        <div class="audi-pack brand-icon-pack" data-brand="Audi">
+          <span class="car-brand">Audi</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/2402/PNG/512/audi_logo_icon_145842.png"
+            alt="aston martin logo"
+          />
+        </div>
+
+        <div class="bmw-pack brand-icon-pack" data-brand="BMW">
+          <span class="car-brand">BMW</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/3911/PNG/512/bmw_logo_icon_247450.png"
+            alt="BMW logo"
+          />
+        </div>
+
+        <div class="bugatti-pack brand-icon-pack" data-brand="Bugatti">
+          <span class="car-brand">Bugatti</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/3911/PNG/512/bugatti_logo_icon_247421.png"
+            alt="bugatti logo"
+          />
+        </div>
+
+        <div class="chevrolet-pack brand-icon-pack" data-brand="Chevrolet">
+          <span class="car-brand">Chevrolet</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/3911/PNG/512/chevrolet_logo_icon_247368.png"
+            alt="chevrolet logo"
+          />
+        </div>
+
+        <div class="ford-pack brand-icon-pack" data-brand="Ford">
+          <span class="car-brand">Ford</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/2402/PNG/512/ford_logo_icon_145825.png"
+            alt="ford logo"
+          />
+        </div>
+
+        <div class="ferrari-pack brand-icon-pack" data-brand="Ferrari">
+          <span class="car-brand">Ferrari</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_ferrari_icon_158911.png"
+            alt="ferrari logo"
+          />
+        </div>
+
+        <div class="porsche-pack brand-icon-pack" data-brand="Porsche">
+          <span class="car-brand">Porsche</span>
+          <img
+            class="brand-car-icon"
+            src="https://cdn.icon-icons.com/icons2/2402/PNG/512/porsche_logo_icon_145784.png"
+            alt="porsche logo"
+          />
+        </div>
+      </div>
+
+      <div class="price-popup hidden">
+        <form action="#" class="form">
+          <div class="form-container">
+            <label for="price-from">From</label>
+            <input
+              class="price-input-from"
+              type="text"
+              id="price-from"
+              name="price-from"
+              required
+            />
+            <label for="price-to">To</label>
+            <input
+              class="price-input-to"
+              type="text"
+              id="price-to"
+              name="price-to"
+              required
+            />
+          </div>
+          <button class="button-find">Find</button>
+        </form>
+      </div>
+    </header>
+
+    <h2 class="featured-car-section-header">Featured cars</h2>
+    <div id="featured-car-section">
+      <div class="featured-car-container"></div>
+    </div>
+
+    <footer class="footer">
+      <img
+        class="footer-logo"
+        src="Images/Car Deals logo.png"
+        alt="car deals logo"
+      />
+      <div class="footer-container">
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="footer-address">
+              623 Harrison St., 2nd Floor, San Fransisco, CA 94107
+            </p>
+            <p>
+              <a href="tel:415-201-6370" class="footer-link"> 415-201-6370 </a>
+              <a href="mailto:autogallery@cardeals.com" class="footer-link">
+                autogallery@cardeals.com
+              </a>
+            </p>
+          </address>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">Create account</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sign in</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">ios app</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Android app</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="footer-link">About Car Deals</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">For Business</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Help center</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy & terms</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-col follow-us-col">
+          <p class="footer-heading">Follow us on</p>
+          <div class="logo-container">
+            <img
+              class="social-media-logo"
+              src="https://cdn.icon-icons.com/icons2/791/PNG/512/TWITTER_icon-icons.com_65486.png"
+              alt="X logo"
+            />
+
+            <img
+              class="social-media-logo"
+              src="https://cdn.icon-icons.com/icons2/1995/PNG/512/instagram_internet_media_network_social_icon_123258.png"
+              alt="instagram logo"
+            />
+
+            <img
+              class="social-media-logo"
+              src="https://cdn.icon-icons.com/icons2/1/PNG/256/sociallinkedin_member_70.png"
+              alt="linkedin logo"
+            />
+
+            <img
+              class="social-media-logo"
+              src="https://cdn.icon-icons.com/icons2/2148/PNG/512/telegram_icon_131945.png"
+              alt="telegram logo"
+            />
+          </div>
+          <p class="email-us">Let us know your opinion</p>
+          <div class="email-us-container">
+            <input type="text" class="email-us-input" placeholder=" Email us" />
+            <button class="email-us-button">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <h3 class="copyright">
+          Copyright &copy; 2024 by Car Deals Inc. All rights reserved.
+        </h3>
+      </div>
+    </footer>
+
+    <div class="overlay hidden" data-overlay></div>
+    <!-- js link -->
+    <script src="script.js" async></script>
+
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!--
+<figure class="featured-car">
+  <img
+    class="car-img"
+    src="https://cdn.motor1.com/images/mgl/NROq2/s1/2020-aston-martin-db11.jpg"
+  />
+  <div class="car-detail">
+    <span class="car-name">Aston Martin One77</span>
+    <div class="car-detail-container">
+      <div class="car-category-pack pack">
+        <i class="ph ph-car-simple"></i>
+        <span class="car-category-name">Sport Car</span>
+      </div>
+
+      <div class="car-country-pack pack">
+        <i class="ph ph-globe-hemisphere-east"></i>
+        <span class="car-country">Britain</span>
+      </div>
+
+      <div class="car-stock-pack pack">
+        <i class="ph ph-check-circle"></i>
+        <span class="car-stock"><strong>25</strong> Units</span>
+      </div>
+
+      <div class="car-year-pack pack">
+        <i class="ph ph-calendar"></i>
+        <span class="car-year"><strong>2012</strong></span>
+      </div>
+    </div>
+    <div class="car-price-pack">
+      <span class="car-price">1200000.00 USD</span>
+      <button class="buy-button">BUY</button>
+    </div>
+  </div>
+</figure>
+-->
