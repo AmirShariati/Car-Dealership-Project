@@ -1,7 +1,7 @@
 # Project Name
 Car Dealership
 
-The project is a website for a car dealership. It uses mongoDB as its databse and features various query types such as query based on name, category, brand and price.
+- The project is a website for a car dealership. It uses mongoDB as its databse and features various query types such as query based on name, category, brand and price.
 
 ## Table of Contents
 
