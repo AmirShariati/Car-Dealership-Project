@@ -14,7 +14,7 @@ This project is a website for a car dealership. It uses MongoDB as its database 
 
 The project is divided into three folders:
 - **Front-end**: Contains HTML, CSS, and JavaScript files.
-- **Back-end**: Contains an API that connects to MongoDB and serves as a server for the front-end.
+- **Back-end**: Contains an API that connects to MongoDB and serves as a server for the front-end using NodeJs.
 - **MongoDB data**: Contains a JSON file with all the data used in the project.
 
 ## Features
